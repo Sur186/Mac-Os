@@ -9,7 +9,7 @@ const BootScreen = () => {
           alt="DeveloperOS Logo"
         />
         <h1>Dev Puri OS</h1>
-        <p>Welcome to Dev Puri OS — Live 🚀</p>
+        <p>Interactive React Portfolio...</p>
         <div className="loader">
           <div className="loader-fill"></div>
         </div>
