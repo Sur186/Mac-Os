@@ -1,0 +1,130 @@
+/**
+ * ==========================================
+ *              DEVELOPER NOTES
+ * ==========================================
+ */
+
+const developer = {
+  name: "Surendra Puri",
+  role: "WordPress Developer",
+  experience: "3+ Years",
+  focus: "Web Development & WordPress",
+};
+
+
+/**
+ * ==========================================
+ *              ABOUT MY WORK
+ * ==========================================
+ */
+
+const about = {
+  description:
+    "I build modern, responsive and user-friendly websites with a strong focus on performance, usability and clean development.",
+
+  approach: [
+    "Clean and maintainable code",
+    "Responsive design",
+    "Performance optimization",
+    "User-friendly interfaces",
+    "Reusable components",
+    "SEO-friendly development",
+  ],
+};
+
+
+/**
+ * ==========================================
+ *              CORE EXPERTISE
+ * ==========================================
+ */
+
+const expertise = {
+  wordpress: [
+    "Custom WordPress Development",
+    "Theme Customization",
+    "Elementor",
+    "Elementor Pro",
+    "ACF Pro",
+    "Custom Post Types",
+    "WooCommerce",
+  ],
+
+  frontend: [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "jQuery",
+    "Bootstrap",
+    "React",
+    "SCSS",
+  ],
+
+  backend: [
+    "PHP",
+    "MySQL",
+  ],
+
+  tools: [
+    "Git",
+    "GitHub",
+    "Figma",
+    "FileZilla",
+    "Slack",
+    "Asana",
+  ],
+};
+
+
+/**
+ * ==========================================
+ *              DEVELOPMENT PROCESS
+ * ==========================================
+ */
+
+const workflow = [
+  "Understand the requirements",
+  "Plan the structure and UI",
+  "Build responsive components",
+  "Integrate functionality",
+  "Test across devices",
+  "Optimize performance",
+  "Deploy and maintain",
+];
+
+
+/**
+ * ==========================================
+ *              CURRENTLY LEARNING
+ * ==========================================
+ */
+
+const learning = [
+  "Advanced JavaScript",
+  "React",
+  "MERN Stack",
+  "Modern Frontend Development",
+];
+
+
+/**
+ * ==========================================
+ *              PERSONAL PHILOSOPHY
+ * ==========================================
+ */
+
+const philosophy =
+  "Build simple solutions, write maintainable code, "
+  + "and keep learning something new every day.";
+
+
+/**
+ * ==========================================
+ *              CONTACT
+ * ==========================================
+ */
+
+const contact = {
+  email: "surendrapuri5121@gmail.com",
+  linkedin: "linkedin.com/in/surendragoswami97/",
+};

@@ -1,0 +1,97 @@
+.boot-screen {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #111;
+  z-index: 999999;
+
+  .boot-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    text-align: center;
+
+
+    h1,
+    p,
+    span {
+      margin: 0;
+      color: #fff;
+    }
+
+    h1 {
+      font-size: 3.75rem;
+      line-height: 1.1;
+    }
+
+    p {
+      font-size: 1.125rem;
+    }
+
+    span {
+      font-size: 1rem;
+      opacity: 0.7;
+    }
+
+    img {
+      width: 5rem;
+      height: 5rem;
+      object-fit: contain;
+      border-radius: 0.3125rem;
+    }
+
+    .loader {
+      width: 13.75rem;
+      height: 0.3125rem;
+      background: #333;
+      border-radius: 1.25rem;
+      overflow: hidden;
+
+      .loader-fill {
+        width: 0;
+        height: 100%;
+        background: #fff;
+        animation: loading 2s linear forwards;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 43.75rem) {
+
+  .boot-content {
+
+    h1 {
+      font-size: 2.25rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+    span {
+      font-size: 0.875rem;
+    }
+    img {
+      width: 4rem;
+      height: 4rem;
+    }
+    .loader {
+      width: 11rem;
+    }
+  }
+}
+
+
+@keyframes loading {
+
+  to {
+    width: 100%;
+  }
+}
