@@ -1,5 +1,9 @@
 # Dev Puri OS
 
+<p align="center">
+  <img src="/mac-os.png" alt="Dev Puri OS Preview" width="100%" />
+</p>
+
 A macOS-inspired interactive desktop portfolio built with React and Vite.
 
 ## 🚀 Live Demo
