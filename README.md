@@ -1,16 +1,71 @@
-# React + Vite
+# Dev Puri OS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A macOS-inspired interactive desktop portfolio built with React and Vite.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+[Visit Dev Puri OS](https://mac-os-zeta-seven.vercel.app/)
 
-## React Compiler
+## 📌 About
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Dev Puri OS is an interactive portfolio website designed to feel like a desktop operating system rather than a traditional portfolio.
+Users can interact with the desktop, open application-style windows, change wallpapers, switch themes, use the terminal, explore projects, and access portfolio information.
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🖥️ macOS-inspired desktop interface
+- 🌄 Dynamic wallpaper selection
+- 🌓 Dark and Light theme
+- 📁 Create and rename desktop folders
+- 🖱️ Custom desktop context menu
+- 🔍 Spotlight-style search
+- 🪟 Draggable and resizable windows
+- 📌 Dock navigation
+- 💻 Interactive CLI / Terminal
+- 🌤️ Weather widget
+- 📄 Resume viewer
+- 📝 Notes application
+- 🎵 Spotify integration
+- 👨‍💻 Developer profile
+- 🐙 GitHub project showcase
+- 💾 LocalStorage persistence
+- 📱 Responsive design
+- ⚡ Vite-powered development and production build
+
+## 🛠️ Tech Stack
+
+- React
+- JavaScript (ES6+)
+- Vite
+- SCSS
+- React RND
+- HTML5
+- CSS3
+- LocalStorage
+- REST API
+
+## 📂 Project Structure
+
+```text
+MAC-DS/
+├── public/
+│   ├── doc-icons/
+│   └── wallpapers/
+│
+├── src/
+│   ├── components/
+│   │   ├── windows/
+│   │   ├── Dock.jsx
+│   │   ├── Nav.jsx
+│   │   ├── Spotlight.jsx
+│   │   └── Weather.jsx
+│   │
+│   ├── data/
+│   ├── assets/
+│   ├── App.jsx
+│   ├── app.scss
+│   └── main.jsx
+│
+├── index.html
+├── package.json
+└── vite.config.js
