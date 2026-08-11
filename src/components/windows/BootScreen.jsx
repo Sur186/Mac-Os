@@ -5,7 +5,7 @@ const BootScreen = () => {
     <div className="boot-screen">
       <div className="boot-content">
         <img
-          src="/doc-icons/logo.png"
+          src="/doc-icons/logo.webp"
           alt="DeveloperOS Logo"
         />
         <h1>Dev Puri OS</h1>

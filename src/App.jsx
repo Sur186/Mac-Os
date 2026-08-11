@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import {lazy, Suspense, useEffect, useRef, useState } from "react";
 
 import "./app.scss";
 
@@ -11,15 +11,14 @@ import Weather from "./components/Weather";
 // Windows
 import BootScreen from "./components/windows/BootScreen";
 import ContextMenu from "./components/windows/ContextMenu";
-import Github from "./components/windows/Github";
-import Note from "./components/windows/Note";
-import Resume from "./components/windows/Resume";
-import Spotify from "./components/windows/Spotify";
-import Cli from "./components/windows/Cli";
-import Developer from "./components/windows/Developer";
-import Wallpaper from "./components/windows/Wallpapermodal";
-import Settings from "./components/windows/Settings";
-
+const Github = lazy(() => import("./components/windows/Github"));
+const Note = lazy(() => import("./components/windows/Note"));
+const Resume = lazy(() => import("./components/windows/Resume"));
+const Spotify = lazy(() => import("./components/windows/Spotify"));
+const Cli = lazy(() => import("./components/windows/Cli"));
+const Developer = lazy(() => import("./components/windows/Developer"));
+const Wallpaper = lazy(() => import("./components/windows/Wallpapermodal"));
+const Settings = lazy(() => import("./components/windows/Settings"));
 
 export const App = () => {
 
@@ -467,19 +466,12 @@ export const App = () => {
       <Weather />
 
 
-      {/* =====================================
-          Dock
-      ====================================== */}
-
       <Dock
         windowsState={windowsState}
         setWindowsState={setWindowsState}
       />
 
-
-      {/* =====================================
-          GitHub Window
-      ====================================== */}
+    <Suspense fallback={null}>
 
       {windowsState.github.open &&
         !windowsState.github.minimized && (
@@ -493,11 +485,6 @@ export const App = () => {
 
         )}
 
-
-      {/* =====================================
-          Notes Window
-      ====================================== */}
-
       {windowsState.note.open &&
         !windowsState.note.minimized && (
           <Note
@@ -509,11 +496,6 @@ export const App = () => {
           />
 
         )}
-
-
-      {/* =====================================
-          Resume Window
-      ====================================== */}
 
       {windowsState.resume.open &&
         !windowsState.resume.minimized && (
@@ -527,11 +509,6 @@ export const App = () => {
 
         )}
 
-
-      {/* =====================================
-          Spotify Window
-      ====================================== */}
-
       {windowsState.spotify.open &&
         !windowsState.spotify.minimized && (
           <Spotify
@@ -543,11 +520,6 @@ export const App = () => {
           />
 
         )}
-
-
-      {/* =====================================
-          Terminal Window
-      ====================================== */}
 
       {windowsState.cli.open &&
         !windowsState.cli.minimized && (
@@ -561,11 +533,6 @@ export const App = () => {
 
         )}
 
-
-      {/* =====================================
-          Developer Window
-      ====================================== */}
-
       {windowsState.developer.open &&
         !windowsState.developer.minimized && (
           <Developer
@@ -578,11 +545,6 @@ export const App = () => {
 
         )}
 
-
-      {/* =====================================
-          Spotlight
-      ====================================== */}
-
       {showSpotlight && (
         <Spotlight
           windowsState={windowsState}
@@ -592,11 +554,6 @@ export const App = () => {
         />
 
       )}
-
-
-      {/* =====================================
-          Context Menu
-      ====================================== */}
 
       {contextMenu.show && (
         <ContextMenu
@@ -612,11 +569,6 @@ export const App = () => {
 
       )}
 
-
-      {/* =====================================
-          Wallpaper Modal
-      ====================================== */}
-
       {showWallpaper && (
         <Wallpaper
           wallpaper={wallpaper}
@@ -624,10 +576,6 @@ export const App = () => {
           setShowWallpaper={setShowWallpaper}
         />
       )}
-
-      {/* =====================================
-          Settings Modal
-      ====================================== */}
 
       {showSettings && (
         <Settings
@@ -638,6 +586,8 @@ export const App = () => {
           setWallpaper={setWallPaper}
         />
       )}
+
+    </Suspense>
     </main>
   );
 };
