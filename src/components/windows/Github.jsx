@@ -27,7 +27,8 @@ const GitCard = ({
         {data.tags.map((tag) => (
           <p
             key={tag}
-            className="tag">
+            className="tag"
+          >
             {tag}
           </p>
         ))}
